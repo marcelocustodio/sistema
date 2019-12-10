@@ -35,6 +35,9 @@ mvc clean install
 - Excluir produtos:
 -- URL: http://localhost:8081/api/v1/produtos/6
 
+- Desativar produto (mudará o atributo de ativo para false). Verbo usado: GET.
+-- URL: http://localhost:8081/api/v1/produtos/desativar/1
+
 
 ## CRUD Pedidos
 
@@ -73,6 +76,17 @@ Antes de criar um item de pedido (ProdutoPedido), é necessário criar o pedido.
 - Listar itens de pedidos:
 -- URL: http://localhost:8081/api/v1/itensdevendas
 
+- Atualizar um item:
+-- URL: http://localhost:8081/api/v1/itensdevendas
+-- Dados:
+{
+	"produto":2,
+	"pedido":1
+}
+
+- Excluir um item:
+-- URL: http://localhost:8081/api/v1/itensdevendas/1
+
 ## Os testes unitários estão na pasta padrão de testes do Spring
 
 ## Extras (não foram solicitados mas contemplei):
@@ -80,6 +94,6 @@ Antes de criar um item de pedido (ProdutoPedido), é necessário criar o pedido.
 - Foi implementado um ControllerAdvice para para produto e pedido não encontrados
 - bean validation
 - filtros especiais de métodos customizados dos repositórios como:
-a) Para listar preços de produtos abaixo de R$ 39,00: http://localhost:8081/api/v1/produtos/abaixoDe/39
-b) Para listar mesas: http://localhost:8081/api/v1/produtos/listarMesas
-c) 
+* Para listar preços de produtos abaixo de R$ 39,00: http://localhost:8081/api/v1/produtos/abaixoDe/39
+* Para listar mesas: http://localhost:8081/api/v1/produtos/listarMesas
+ 
