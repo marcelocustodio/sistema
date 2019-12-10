@@ -1,11 +1,11 @@
-# Sistema
+# Sistema (Prova Nível 2)
 
 ## Configuração ambiente
 
 - criar base "senior" na porta padrão do Postgres
 - criar usuário "postgres" com senha "123"
 - use o verbo adequado para cada teste a seguir.
-- os testes unitários estão na pasta padrão de testes do Spring
+- a porta usada foi a 8081, conforme application.properties
 - execução:
 mvc clean install
 
@@ -73,3 +73,13 @@ Antes de criar um item de pedido (ProdutoPedido), é necessário criar o pedido.
 - Listar itens de pedidos:
 -- URL: http://localhost:8081/api/v1/itensdevendas
 
+## Os testes unitários estão na pasta padrão de testes do Spring
+
+## Extras (não foram solicitados mas contemplei):
+
+- Foi implementado um ControllerAdvice para para produto e pedido não encontrados
+- bean validation
+- filtros especiais de métodos customizados dos repositórios como:
+a) Para listar preços de produtos abaixo de R$ 39,00: http://localhost:8081/api/v1/produtos/abaixoDe/39
+b) Para listar mesas: http://localhost:8081/api/v1/produtos/listarMesas
+c) 
