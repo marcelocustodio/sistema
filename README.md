@@ -1,12 +1,7 @@
 # Sistema (Prova Nível 2)
 
 ## Tecnologias usadas:
-Banco de dados PostgreSQL
-Java 8+
-Maven
-Spring
-JPA
-REST com JSON
+PostgreSQL, Java 8+, Maven, Spring, JPA, REST com JSON
 
 ## Configuração ambiente
 
