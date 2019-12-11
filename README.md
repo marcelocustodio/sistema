@@ -8,6 +8,7 @@
 - a porta usada foi a 8081, conforme application.properties
 - execução:
 mvc clean install
+- de início, são criados 6 produtos.
 
 ## CRUD Produtos
 
