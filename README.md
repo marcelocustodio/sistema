@@ -50,6 +50,12 @@ mvc clean install
 
 - Atualizar pedido:
 -- URL: http://localhost:8081/api/v1/pedidos/1  (supondo id do pedido como 1)
+-- Dados:
+{
+         "cliente":"Marcelo",
+	 "situacao":"fechado",
+	 "valorTotal":45
+}
 
 - Listar pedidos:
 -- URL: http://localhost:8081/api/v1/pedidos/
@@ -72,6 +78,8 @@ Antes de criar um item de pedido (ProdutoPedido), é necessário criar o pedido.
 	"produto":3,
 	"pedido":1
 }
+
+Quando se cria um produto-pedido (item de pedido), automaticamente o campo valorTotal do Pedido é atualizado com o preço do produto adicionado.
 
 - Listar itens de pedidos:
 -- URL: http://localhost:8081/api/v1/itensdevendas
