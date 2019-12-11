@@ -102,6 +102,6 @@ Quando se cria um produto-pedido (item de pedido), automaticamente o campo valor
 - Foi implementado um ControllerAdvice para para produto e pedido não encontrados
 - bean validation
 - filtros especiais de métodos customizados dos repositórios como:
-* Para listar preços de produtos abaixo de R$ 39,00: http://localhost:8081/api/v1/produtos/abaixoDe/39
-* Para listar mesas: http://localhost:8081/api/v1/produtos/listarMesas
+** Para listar preços de produtos abaixo de R$ 39,00: http://localhost:8081/api/v1/produtos/abaixoDe/39
+** Para listar mesas: http://localhost:8081/api/v1/produtos/listarMesas
  
